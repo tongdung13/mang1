@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let array = [1,2,5,4,7,9,4,2,4,6,7,5,7,4,7,3,2,6,8];
+   // x = array[2] + array[4] + array[6] + array[8];
+   // alert(x);
+  //  document.write(" ");
+  //  let a = 0;
+  //  for(i =0; i<array.length; i++){
+    //    a += array[i];
+   // }
+  //  alert(a)
+  //   document.write(" ");
+  //   let a = 0;
+  //   for (i = 0; i < array.length; i++){
+  //       if(array[i] % 2 == 0){
+  //           a += array[i];
+  //        }
+  //    }
+   // alert(a);
+     let max = array[0];
+   let min = array[0];
+    let a =0;
+   let total = 0;
+    for (let i = 1; i < array.length; i++){
+        if (array[i] > max){
+            max = array[i];
+    }
+   if(min> array[i]){
+       min = array[i];
+    }
+     total += array[i];
+    }
+   a = total/array.length;
+    document.write("array=" + array+"<br>");
+    document.write("a" + a + "<br>" + "max" + max + "<br>" + "min" + min);
+</script>
+
+</body>
+</html>

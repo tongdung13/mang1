@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+let array = [
+    [5,7,0],
+    [0,11,9],
+    [11,10,9],
+    [5,7,8]
+]
+let total = 0;
+for (let i = 0; i < array[0].length; i++) {
+    for (let j = 0; j < array.length; j++) {
+        if (array[j][i]===0){
+            break;
+        }
+        total += array[j][i];
+    }
+}
+alert(total)
+</script>
+</body>
+</html>
